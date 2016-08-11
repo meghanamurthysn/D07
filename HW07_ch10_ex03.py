@@ -6,3 +6,17 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+def cumulative_sum(list_int):
+	cum_sum_lst =  []
+	cum_val = 0
+	for item in list_int:
+		cum_val+=item
+		cum_sum_lst.append(cum_val)
+	return(cum_sum_lst)
+
+def main():
+	print(cumulative_sum([1, 2, 3, 4, 5]))
+
+if __name__ == '__main__':
+	main()
